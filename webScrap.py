@@ -10,7 +10,7 @@ import fitz  # PyMuPDF
 import pandas as pd
 
 # Open the PDF file
-pdf_file = 'LinaHan.pdf'
+pdf_file = 'filename.pdf'
 doc = fitz.open(pdf_file)
 
 # Find all occurrences of the search phrase
@@ -87,7 +87,7 @@ import pandas as pd
 main_df = pd.DataFrame(columns=['Country', 'Entity', 'License requirement', 'License review policy', 'FEDERAL REGISTER citation'], index=range(1064))
 
 # Open the PDF file and get the first page
-with fitz.open('LinaHan.pdf') as pdf:
+with fitz.open('filename.pdf') as pdf:
     # Get the pages
     for k in range(76):
         page = pdf[k] 
